@@ -217,16 +217,6 @@ p{text-wrap:pretty}
 .cf .ac{margin-top:36px}
 
 /* ---------- rodapé ---------- */
-.rd{padding:72px 0 80px;background:var(--junta);color:rgb(var(--cr-rgb) / .82);font-size:var(--f-meta);line-height:1.6}
-.rd-g{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px}
-.rd .mc{font-size:22px;color:var(--creme)}.rd .mc b{font-weight:700}
-.rd p+p{margin-top:12px}
-.rd h3{font-size:18px;font-weight:700;color:var(--creme)}
-.rd h3+p{margin-top:4px}
-.rd ul{margin-top:16px;list-style:none;columns:2;column-gap:40px;font-size:15px}
-.rd li{break-inside:avoid;padding:3px 0}
-.rd a{color:var(--creme);text-underline-offset:3px}
-.rd a:hover{color:var(--ouro)}
 
 /* ---------- ampliar página ---------- */
 .zoom{margin:auto;padding:0;border:0;background:transparent;max-width:min(96vw,1000px);max-height:96vh;overflow:visible}
@@ -314,7 +304,7 @@ p{text-wrap:pretty}
  .cf{grid-template-columns:minmax(0,1fr);min-height:0}
  .cf-foto{min-height:0;aspect-ratio:16/10}
  .cf-tx{padding:72px var(--gut) 88px;max-width:none}
- .rd-g{grid-template-columns:minmax(0,1fr);gap:40px}
+
 }
 @media (max-width:620px){
  :root{--gut:20px;--f-lead:20px;--f-h3:23px;--f-h2:clamp(34px,9.6vw,44px);--f-let:clamp(54px,15vw,64px)}
@@ -370,10 +360,8 @@ p{text-wrap:pretty}
  .fq{padding:80px 0}
  .fq summary{font-size:20px;padding:20px 0}
  .fq details p{padding-right:0;font-size:18px}
- .cf-tx{padding:56px var(--gut) 72px}
+ .cf-tx{padding:56px var(--gut) calc(112px + env(safe-area-inset-bottom))}
  .cf p{font-size:19px}
- .rd{padding:56px 0 124px}
- .rd ul{columns:1}
  .fixo{display:flex;align-items:center;justify-content:space-between;gap:14px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));background:var(--tabua);color:var(--creme);box-shadow:0 -6px 20px rgb(var(--k-rgb) / .22);transform:translateY(110%);transition:transform .3s var(--ease)}
  .fixo.on{transform:none}
  .fixo b{display:block;font-size:24px;line-height:1.1;color:var(--creme)}
@@ -560,39 +548,6 @@ p{text-wrap:pretty}
 </section>
 </main>
 
-<footer class="rd">
- <div class="wrap rd-g">
-  <div>
-   <p class="mc">Campos do Jordão <b>Gastando Pouco</b></p>
-   <p>Guia completo, independente, edição 2026/27. Não é um guia oficial de Campos do Jordão nem de nenhum parque citado. Preços aproximados; confirme antes de ir.</p>
-   <p>Pagamento e entrega pela Kiwify.</p>
-  </div>
-  <div>
-   <h3>Créditos das fotos</h3>
-   <p>Wikimedia Commons, usadas sob as licenças indicadas. Inclui as fotos da capa e das páginas mostradas.</p>
-   <ul>
-    <li>Amantikir (topo e capa): Bentojr, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Bondinho: Pedro Nardi, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Pedra do Baú: Carlos Maciel 40, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pt-br" rel="noopener license">CC BY-SA 3.0</a></li>
-    <li>Vila Capivari, vista aérea: Governo do Estado de São Paulo, <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br" rel="noopener license">CC BY 2.0</a></li>
-    <li>Teleférico: Rodrigo Soldon, <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br" rel="noopener license">CC BY 2.0</a></li>
-    <li>Amantikir (mirante): Alexandre Valerio Mussio, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Mosteiro de São João: Marco Ankosqui/MTur Destinos, domínio público</li>
-    <li>Palácio Boa Vista: Lfpalace, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Bosque do Silêncio: Marco Ankosqui/MTur Destinos, domínio público</li>
-    <li>Ducha de Prata: Allice Hunter, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Pico do Itapeva: Rodrigo Soldon, <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br" rel="noopener license">CC BY 2.0</a></li>
-    <li>Parque Estadual (Horto): Rafael Borges Mundim, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Museu Felícia Leirner: Jade Cristina Bernardino, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Praça do Capivari (pág. 13): Ana Mercedes Gauna, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Mesas no Capivari (pág. 30): Rodrigo Soldon, <a href="https://creativecommons.org/licenses/by/2.0/deed.pt-br" rel="noopener license">CC BY 2.0</a></li>
-    <li>Bonde (pág. 37): Newordertemple, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pt-br" rel="noopener license">CC BY-SA 3.0</a></li>
-    <li>Boulevard Genève: Allice Hunter, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener license">CC BY-SA 4.0</a></li>
-    <li>Portal da cidade: Marco Ankosqui/MTur, CC0</li>
-   </ul>
-  </div>
- </div>
-</footer>
 
 <dialog class="zoom" id="zoom" aria-label="Página ampliada">
  <img src="img/pagina-13.webp" width="1200" height="1700" alt="">
